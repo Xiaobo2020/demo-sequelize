@@ -2,7 +2,7 @@ import { BelongsTo, DataTypes, ModelStatic } from "sequelize";
 
 import sequelize from "../sequelize";
 import Organization from "./organization";
-import { OrganizationInstance, ProjectInstance } from "../type";
+import { OrganizationInstance, ProjectInstance } from "../types";
 
 // @ts-ignore
 const Project: ModelStatic<ProjectInstance> & {

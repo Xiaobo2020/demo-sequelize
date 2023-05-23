@@ -2,7 +2,7 @@
 import { ValueOf } from "@/packages/common/type";
 import { RESPONSE_CODE, RESPONSE_STATUS } from "@/packages/server/constant";
 import { Organization } from "@/packages/server/model";
-import { OrganizationAttributes, ResponseData } from "@/packages/server/type";
+import { OrganizationAttributes, ResponseData } from "@/packages/server/types";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const ERROR_CODE = {

@@ -3,7 +3,7 @@ import { ValueOf } from "@/packages/common/type";
 import { validNumber, validString } from "@/packages/common/util/validator";
 import { RESPONSE_CODE, RESPONSE_STATUS } from "@/packages/server/constant";
 import { Organization, Project } from "@/packages/server/model";
-import { ProjectAttributes, ResponseData } from "@/packages/server/type";
+import { ProjectAttributes, ResponseData } from "@/packages/server/types";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const ERROR_CODE = {

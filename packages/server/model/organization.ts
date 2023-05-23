@@ -1,7 +1,7 @@
 import { DataTypes, HasMany, ModelStatic } from "sequelize";
 
 import sequelize from "../sequelize";
-import { OrganizationInstance, ProjectInstance } from "../type";
+import { OrganizationInstance, ProjectInstance } from "../types";
 
 // @ts-ignore
 const Organization: ModelStatic<OrganizationInstance> & {
