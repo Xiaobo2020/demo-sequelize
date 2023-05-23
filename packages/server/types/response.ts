@@ -1,4 +1,4 @@
-import { RESPONSE_CODE, RESPONSE_STATUS } from "../constant";
+import { RESPONSE_CODE, RESPONSE_STATUS } from "../constants";
 
 export type ResponseDataFailure<C = typeof RESPONSE_CODE.FAILURE> = {
   status: typeof RESPONSE_STATUS.FAILURE;

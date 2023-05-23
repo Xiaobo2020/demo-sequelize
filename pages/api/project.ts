@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { RESPONSE_CODE, RESPONSE_STATUS } from "@/packages/server/constant";
+import { RESPONSE_CODE, RESPONSE_STATUS } from "@/packages/server/constants";
 import { Project } from "@/packages/server/models";
 import { ProjectAttributes, ResponseData } from "@/packages/server/types";
 import type { NextApiRequest, NextApiResponse } from "next";
