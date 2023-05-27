@@ -1,13 +1,11 @@
-import { BelongsTo, DataTypes, ModelStatic } from "sequelize";
+import { DataTypes } from "sequelize";
 
 import sequelize from "../sequelize";
+import type { ProjectInstance, ProjectModel } from "../types";
 import Organization from "./organization";
-import { OrganizationInstance, ProjectInstance } from "../types";
 
 // @ts-ignore
-const Project: ModelStatic<ProjectInstance> & {
-  Organization: BelongsTo<ProjectInstance, OrganizationInstance>;
-} = sequelize.define<ProjectInstance>(
+const Project: ProjectModel = sequelize.define<ProjectInstance>(
   "Project",
   {
     id: {

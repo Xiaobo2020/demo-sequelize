@@ -1,12 +1,10 @@
-import { DataTypes, HasMany, ModelStatic } from "sequelize";
+import { DataTypes } from "sequelize";
 
 import sequelize from "../sequelize";
-import { OrganizationInstance, ProjectInstance } from "../types";
+import type { OrganizationInstance, OrganizationModel } from "../types";
 
 // @ts-ignore
-const Organization: ModelStatic<OrganizationInstance> & {
-  Project: HasMany<OrganizationInstance, ProjectInstance>;
-} = sequelize.define<OrganizationInstance>(
+const Organization: OrganizationModel = sequelize.define<OrganizationInstance>(
   "Organization",
   {
     id: {

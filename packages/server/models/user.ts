@@ -1,7 +1,7 @@
 import { DataTypes, ModelStatic } from "sequelize";
 
 import sequelize from "../sequelize";
-import { UserInstance } from "../types";
+import type { UserInstance } from "../types";
 
 const User: ModelStatic<UserInstance> = sequelize.define<UserInstance>(
   "User",

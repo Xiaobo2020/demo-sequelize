@@ -1,4 +1,5 @@
-import { Model, Optional } from "sequelize";
+import { HasMany, Model, ModelStatic, Optional } from "sequelize";
+import { ProjectInstance } from "./project";
 
 // ===== Organization =====
 export interface OrganizationAttributes {
@@ -11,3 +12,7 @@ interface OrganizationCreationAttributes
 
 export interface OrganizationInstance
   extends Model<OrganizationAttributes, OrganizationCreationAttributes> {}
+
+export type OrganizationModel = ModelStatic<OrganizationInstance> & {
+  Project: HasMany<OrganizationInstance, ProjectInstance>;
+};
