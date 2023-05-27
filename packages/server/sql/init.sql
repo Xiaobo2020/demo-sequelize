@@ -20,3 +20,12 @@ CREATE TABLE
     `name` VARCHAR(256),
     `organization_id` INT
   );
+
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE
+  user (
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
+    `username` VARCHAR(256),
+    `display_name` VARCHAR(256)
+  );
