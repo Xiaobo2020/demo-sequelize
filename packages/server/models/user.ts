@@ -1,9 +1,9 @@
-import { DataTypes, ModelStatic } from "sequelize";
+import { DataTypes } from "sequelize";
 
 import sequelize from "../sequelize";
-import type { UserInstance } from "../types";
+import type { UserInstance, UserModel } from "../types";
 
-const User: ModelStatic<UserInstance> = sequelize.define<UserInstance>(
+const User: UserModel = sequelize.define<UserInstance>(
   "User",
   {
     id: {

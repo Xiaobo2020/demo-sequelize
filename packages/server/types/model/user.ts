@@ -1,4 +1,4 @@
-import { Model, Optional } from "sequelize";
+import { Model, ModelStatic, Optional } from "sequelize";
 
 // ===== User =====
 export interface UserAttributes {
@@ -11,3 +11,5 @@ interface UserCreationAttributes extends Optional<UserAttributes, "id"> {}
 
 export interface UserInstance
   extends Model<UserAttributes, UserCreationAttributes> {}
+
+export type UserModel = ModelStatic<UserInstance>;
